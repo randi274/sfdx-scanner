@@ -26,5 +26,3 @@ jobs:
     # if: ${{ needs.verify-should-run.outputs.should-run == 'true' }}
     uses: ./.github/workflows/create-release-branch.yml
     secrets: inherit
-    with:
-      release-type: minor
