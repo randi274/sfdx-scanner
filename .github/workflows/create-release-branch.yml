@@ -72,7 +72,7 @@ jobs:
             mutation ($message: String!, $oldOid: GitObjectID!, $branch: String!, $newPackage: Base64String!) {
               createCommitOnBranch(input: {
                 branch: {
-                  repositoryNameWithOwner: "forcedotcom/code-analyzer",
+                  repositoryNameWithOwner: "${{ github.repository }}",
                   branchName: $branch
                 },
                 message: {
