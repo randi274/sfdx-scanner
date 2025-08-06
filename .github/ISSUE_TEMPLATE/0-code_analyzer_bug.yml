@@ -105,6 +105,7 @@ body:
       description: Add any other context about the problem.
       placeholder: |
         Drag any files or screenshots you have here.
+      render: shell
   - type: textarea
     attributes:
       label: Workaround
